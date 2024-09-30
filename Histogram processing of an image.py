@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 gray_image = cv2.imread("gray image of flower.jpg")
 color_image = cv2.imread()
 cv2.imshow("Gray Image",gray_image)
-
+cv2.imshow("color image",color_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
@@ -24,9 +24,9 @@ hist=cv2.calcHist(grayscale_image,[0],None,[255],[0,255])
 hist1=cv2.calcHist()
 plt.figure()
 plt.title("Histogram")
-plt.xlabel("")
+plt.xlabel("Colorscale value")
 plt.ylabel("pixel count")
-plt.stem()
+plt.stem(color_hist)
 plt.show()
 
 
